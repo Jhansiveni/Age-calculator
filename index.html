@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Age Calculator</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Theme Toggle -->
+        <button id="themeBtn" class="theme-btn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Heading -->
+        <div class="header">
+
+            <h1>
+                 Age Calculator
+            </h1>
+
+            <p>
+                Calculate your exact age with detailed statistics
+            </p>
+
+        </div>
+
+        <!-- Input Card -->
+        <div class="card">
+
+            <label>
+                <i class="fa-solid fa-calendar-days"></i>
+                Select Your Date of Birth
+            </label>
+
+            <input
+                type="date"
+                id="dob"
+                max="">
+
+            <div class="buttons">
+
+                <button id="calculateBtn">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    Calculate
+
+                </button>
+
+                <button id="resetBtn">
+
+                    <i class="fa-solid fa-rotate-left"></i>
+
+                    Reset
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Error Message -->
+        <div id="error" class="error"></div>
+
+        <!-- Birthday Animation -->
+        <div id="birthdayBox" class="birthday-box">
+
+            <h2>🎉 Happy Birthday! 🎂</h2>
+
+            <p>
+                Wishing you happiness, success and wonderful memories.
+            </p>
+
+        </div>
+
+        <!-- Result Section -->
+        <div id="resultSection" class="result-section">
+
+            <h2>Your Age</h2>
+
+            <div class="age-grid">
+
+                <div class="age-card">
+                    <h3 id="years">0</h3>
+                    <p>Years</p>
+                </div>
+
+                <div class="age-card">
+                    <h3 id="months">0</h3>
+                    <p>Months</p>
+                </div>
+
+                <div class="age-card">
+                    <h3 id="days">0</h3>
+                    <p>Days</p>
+                </div>
+
+            </div>
+
+            <!-- Live Timer -->
+            <div class="live-time">
+
+                <h2>Live Age Counter</h2>
+
+                <div class="timer-grid">
+
+                    <div class="timer-card">
+                        <span id="hours">0</span>
+                        <small>Hours</small>
+                    </div>
+
+                    <div class="timer-card">
+                        <span id="minutes">0</span>
+                        <small>Minutes</small>
+                    </div>
+
+                    <div class="timer-card">
+                        <span id="seconds">0</span>
+                        <small>Seconds</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Statistics -->
+            <h2>Lifetime Statistics</h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-calendar"></i>
+                    <h3 id="totalMonths">0</h3>
+                    <p>Total Months</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-calendar-week"></i>
+                    <h3 id="totalWeeks">0</h3>
+                    <p>Total Weeks</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3 id="totalDays">0</h3>
+                    <p>Total Days</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3 id="totalHours">0</h3>
+                    <p>Total Hours</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <h3 id="totalMinutes">0</h3>
+                    <p>Total Minutes</p>
+                </div>
+
+                <div class="stat-card">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                    <h3 id="totalSeconds">0</h3>
+                    <p>Total Seconds</p>
+                </div>
+
+            </div>
+
+            <!-- Extra Information -->
+            <h2>Additional Information</h2>
+
+            <div class="extra-grid">
+
+                <div class="extra-card">
+
+                    <i class="fa-solid fa-gift"></i>
+
+                    <h3>Next Birthday</h3>
+
+                    <p id="nextBirthday">
+                        --
+                    </p>
+
+                </div>
+
+                <div class="extra-card">
+
+                    <i class="fa-solid fa-star"></i>
+
+                    <h3>Zodiac Sign</h3>
+
+                    <p id="zodiac">
+                        --
+                    </p>
+
+                </div>
+
+                <div class="extra-card">
+
+                    <i class="fa-solid fa-calendar-day"></i>
+
+                    <h3>Born On</h3>
+
+                    <p id="dayBorn">
+                        --
+                    </p>
+
+                </div>
+
+                <div class="extra-card">
+
+                    <i class="fa-solid fa-leaf"></i>
+
+                    <h3>Leap Year</h3>
+
+                    <p id="leapYear">
+                        --
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
