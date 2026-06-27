@@ -1,2 +1,5 @@
-# Age-calculator
-Advanced Age Calculator — Calculate your exact age with years, months &amp; days, live ticking counter, lifetime statistics, zodiac sign, birthstone, Chinese zodiac, birthday confetti, next birthday countdown, fun facts &amp; WhatsApp sharing. Dark/light theme. Fully responsive. Built with HTML, CSS &amp; JavaScript.
+Advanced Age Calculator is a feature-rich, interactive web application built with HTML, CSS, and vanilla JavaScript. It calculates your exact age in years, months, and days — along with a live ticking counter for hours, minutes, and seconds. The app displays comprehensive lifetime statistics, including total months, weeks, days, hours, minutes, and seconds lived.
+Beyond basic age calculation, it reveals personal insights such as your Zodiac sign, Chinese Zodiac animal, day of the week you were born, birthstone, season of birth, and whether your birth year was a leap year. A real-time countdown timer shows exactly how long until your next birthday.
+The app includes a birthday confetti animation that triggers automatically if today is your birthday. Professional features include an animated number counter, a year progress bar, fun facts (heartbeats, blinks, breaths, and more), one-click copy of your full age report, and a WhatsApp share button.
+The UI features a glassmorphism design with an animated background, smooth hover effects, and a dark/light theme toggle — fully responsive across mobile, tablet, and desktop.
+Tech Stack: HTML5 · CSS3 · JavaScript (ES6+) · Font Awesome · Google Fonts (Poppins)
